@@ -55,8 +55,14 @@ jobs:
           path: app/build/outputs/apk/debug/*.apk
 
       - name: Decode keystore (only when secrets are set)
-        if: ${{ secrets.KEYSTORE_BASE64 != '' }}
-        run: echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 -d > ${{ github.workspace }}/release-key.jks
+        env:
+          KEYSTORE_BASE64: ${{ secrets.KEYSTORE_BASE64 }}
+        run: |
+          if [ -n "$KEYSTORE_BASE64" ]; then
+            echo "$KEYSTORE_BASE64" | base64 -d > "${{ github.workspace }}/release-key.jks"
+          else
+            echo "No keystore secret set - release AAB will be assembled unsigned."
+          fi
 
       - name: Build release AAB
         env:
