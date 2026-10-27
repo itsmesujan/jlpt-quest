@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Themed-icon (monochrome) variant: single-colour torii silhouette. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="108" android:viewportHeight="108">
+    <path android:fillColor="#000000"
+        android:pathData="M24,34 C40,29 68,29 84,34 L82,39 C66,35 42,35 26,39 Z"/>
+    <path android:fillColor="#000000" android:pathData="M29,44 h50 v5 h-50 z"/>
+    <path android:fillColor="#000000" android:pathData="M35,49 h6 v30 h-6 z"/>
+    <path android:fillColor="#000000" android:pathData="M67,49 h6 v30 h-6 z"/>
+    <path android:fillColor="#000000" android:pathData="M33,60 h42 v4.5 h-42 z"/>
+</vector>

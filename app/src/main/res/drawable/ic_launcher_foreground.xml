@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Adaptive icon foreground: a torii gate (safe zone = centre 66dp of 108dp).
+     The 512px store PNG (store-listing/icon-512.png) adds the あ glyph under the gate. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="108" android:viewportHeight="108">
+    <!-- top beam (kasagi), gently curved -->
+    <path android:fillColor="#C62828"
+        android:pathData="M24,34 C40,29 68,29 84,34 L82,39 C66,35 42,35 26,39 Z"/>
+    <!-- second beam (nuki/shimaki) -->
+    <path android:fillColor="#D84315"
+        android:pathData="M29,44 h50 v5 h-50 z"/>
+    <!-- centre post (gaku) -->
+    <path android:fillColor="#8E1414"
+        android:pathData="M52,39 h4 v8 h-4 z"/>
+    <!-- pillars -->
+    <path android:fillColor="#D84315"
+        android:pathData="M35,49 h6 v30 h-6 z"/>
+    <path android:fillColor="#D84315"
+        android:pathData="M67,49 h6 v30 h-6 z"/>
+    <!-- cross tie (nuki) -->
+    <path android:fillColor="#C62828"
+        android:pathData="M33,60 h42 v4.5 h-42 z"/>
+    <!-- ground line -->
+    <path android:fillColor="#6D4C41"
+        android:pathData="M28,82 h52 v3 h-52 z"/>
+</vector>
