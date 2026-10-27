@@ -16,7 +16,8 @@ val keystoreProps = Properties().apply {
 }
 fun signingValue(propKey: String, envKey: String): String? =
     keystoreProps.getProperty(propKey) ?: System.getenv(envKey)
-val hasReleaseSigning = signingValue("storeFile", "JLPT_KEYSTORE_FILE") != null
+val hasReleaseSigning = signingValue("storeFile", "JLPT_KEYSTORE_FILE")
+    ?.let { rootProject.file(it).exists() } == true
 
 android {
     // applicationId set by the owner (2026-10-27). Play treats it as permanent
